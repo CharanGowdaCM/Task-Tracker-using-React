@@ -26,4 +26,4 @@ As created using React added extra 2 files under components along with available
 # SCREENSHOTS AND DEMO_VIDEO
 ->Screenshots of various stages has been uploaded.
 
--> A demo video also has been uploaded.
+-> A demo video also has been uploaded and it is uploaded to google drive also the link - https://drive.google.com/file/d/1yPB0iaDK6B2VuecHM9usSAQsUCVaH9zF/view?usp=drive_link
