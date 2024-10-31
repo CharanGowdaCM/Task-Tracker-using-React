@@ -4,24 +4,26 @@ const TaskList = ({ tasks, deleteTask, status }) => {
   
 return (
   <>
-    <div>Your tasks </div>
+    
     {tasks.length != 0  
     ?
-      <ol>
+      <section id="list">
+        <h2>Your tasks </h2>
         {tasks.map((task) => (
-          <li key={task.id}>
+          <li id="list_items">
 
-            {task.title}
-            <br></br>
+            <h3>{task.title}</h3>
+            <div id="below_task">
             <input  type="checkbox"  checked={task.completed} onChange={() => status(task.id)}/>
 
-            {task.completed ?<span> Completed</span>: <span>Not completed</span>}
-            &nbsp;&nbsp;
+            {task.completed ?<span id="compl"> Completed</span>: <span id="not_compl">Not completed</span>}
+           
             <button onClick={() => deleteTask(task.id)}>Delete</button>
+            </div>
           </li>
         ))}
-      </ol> 
-    : <span>U have no tasks to do</span>}
+      </section> 
+    : <span id="list"> <h2> U have no tasks to do </h2></span>}
   </>
 );
 }

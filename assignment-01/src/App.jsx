@@ -30,11 +30,11 @@ function App() {
   
   return (
     <>
-  
+    <body id="body">
       <h1>Task Tracker</h1>
       <TaskList  tasks={tasks} deleteTask={deleteTask} status={status} />
       <TaskInput addTask={addTask}/>
-     
+      </body>
     </>
   )
 }
